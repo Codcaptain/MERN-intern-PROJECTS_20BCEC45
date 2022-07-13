@@ -1,0 +1,28 @@
+.form_container{
+    margin:auto;
+    width: 80%;
+    padding:50px;
+    background-color: #e6e1e1;
+}
+.form_element{
+    width:100%;
+    margin: 10px 0px;
+}
+input[type=text]{
+    width:50%;
+}
+input[type=email]{
+    width:50%;
+}
+input[type=submit]{
+    width:200px;
+    height: 50px;
+    text-align: center;
+    background-color: blueviolet;
+    color: #fff;
+    border-radius: 10px;
+    font-size:20px
+}
+select{
+    width: 50%;
+}
