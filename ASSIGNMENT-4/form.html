@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <div>    
+        <form>
+            <div class="form_element">
+                <input type="text" id="full_name" placeholder="Full Name" />
+            </div>
+            <div class="form_element">
+               <input type="email" id="emailid" placeholder="Email Address"/>
+            </div>
+            <div class="form_element">
+                <input type="text" id="phoneno" placeholder="Enter Your mobile number"/>
+            </div>
+            <div class="form_element">
+               <select id="gender" >
+                    <option value="select gender">Select gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+            <div>
+                <input type="radio" name="shift" id="shift_1" value="Faculty">Faculty
+                <input type="radio" name="shift" id="shift_2" value="Student">Student
+            </div>
+            <div class="form_element">
+               <textarea cols="100" rows="5" id="address"placeholder="Address"></textarea>
+            </div>
+            <div class="form_element">
+                <input type="number" id="pincode"placeholder="Pincode"/>
+            </div>
+            <div class="form_element">
+                <input type="password"id='password'placeholder="Password"/>
+            </div>
+            <div class="form_element">
+                <input type="password"id='confirmpassword'placeholder="Confirm Password"/>
+            </div>
+            <div class="form_element">
+                <input type="checkbox" id="i_agree" value="yes"/> I agree with all terms and conditions
+            </div>
+            <div class="form_element">
+                <input type="submit" id="submit" value="Submit"/>
+            </div>
+        </form>
+    </div>
+    <script src="js/dom2.js"></script>
+</body>
+</html>
