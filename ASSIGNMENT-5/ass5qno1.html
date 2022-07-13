@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Setup</title>
+</head>
+<body>
+    
+</body>
+<script>
+        let basicsal = Number(prompt("Enter the Basic Salary"))
+        let information={
+    empname:"Brendan Eich",
+    email:'rhonrocks@gmail.com',
+    phone:12345678,    
+    info:function(){
+        return "EMPNAME="+this.empname+"\nEMAILID="+this.email+"\nPHONENO="+this.phone;
+    }
+}
+console.log(information.info());
+function Employee(basicsal)
+{
+    
+    let hra,sa,deductamount;
+    hra=0.15*basicsal;
+    sa=0.2*basicsal;
+    let totalsal=basicsal+hra+sa;
+    if(basicsal>40000&&basicsal<50000)
+    {
+        deductamount=totalsal-(0.1*totalsal);
+    }
+    else if(basicsal<70000&&basicsal>50000)
+    {
+        deductamount=totalsal-(0.15*totalsal);
+    }
+    else if(basicsal>70000&&basicsal<80000)
+    {
+        deductamount=totalsal-(0.2*totalsal);
+    }
+    else 
+    {
+        deductamount=totalsal-(0.3*totalsal);
+    }
+    return 'totalsalary='+totalsal+"\ndeductsalary="+deductamount;
+
+}
+
+console.log(Employee(basicsal));
+</script>
+</html>
