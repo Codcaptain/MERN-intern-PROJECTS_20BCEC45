@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let customer=[
+    {
+        name:'Joe Biden',
+        email:'joebiden@gmail.com',
+        phone:9862348123,
+        no_of_times_shopped:2,
+        purchase_history: [
+        {
+            date_of_purchase:'11/07/2022',
+            item_purchased:[
+                {
+                    product_name:'Samsung Galaxy y',
+                    product_price:12000
+                } ,
+                {
+                    product_name:'Mixer',
+                    product_price:4000 
+                },
+            ]
+        },
+        {
+            date_of_purchase:'04/06/2022',
+            item_purchased:[
+                {
+                    product_name:'jeans',
+                    product_price:1200
+                },
+            ]
+        }
+    ]
+},
+{
+    name:'akanshya',
+    email:'akansadsh@gmail.com',
+    phone:3428756093,
+    no_of_times_shopped:6,
+    purchase_history: [
+        {
+            date_of_purchase:'09/07/2022',
+            item_purchased:[
+                {
+                    product_name:'iphone',
+                    product_price:120000
+                } ,
+                {
+                    product_name:'cloth',
+                    product_price:4000 
+                },
+            ]
+        },
+        {
+            date_of_purchase:'29/06/2022',
+            item_purchased:[
+                {
+                    product_name:'flax seed',
+                    product_price:1200
+                } ,
+            ]
+        },
+        {
+            date_of_purchase:'31/06/2022',
+            item_purchased:[
+                {
+                    product_name:'fruits',
+                    product_price:600
+                } ,
+            ]
+        },
+        {
+            date_of_purchase:'20/06/2022',
+            item_purchased:[
+                {
+                    product_name:'Tshirt',
+                    product_price:500
+                } ,
+            ]
+        },
+        {
+            date_of_purchase:'14/06/2022',
+            item_purchased:[
+                {
+                    product_name:'jeans',
+                    product_price:1300
+                } ,
+            ]
+        },
+        {
+            date_of_purchase:'15/06/2022',
+            item_purchased:[
+                {
+                    product_name:'scrunchies',
+                    product_price:200
+                } ,
+            ]
+        }
+    ]
+},
+{
+    name:'hajuri',
+    email:'hajurikhuntia@gmail.com',
+    phone:3482764922,
+    no_of_times_shopped:2,
+    purchase_history: [
+        {
+            date_of_purchase:'08/07/2022',
+            item_purchased:[
+                {
+                    product_name:'oppo',
+                    product_price:32000
+                } ,
+                {
+                    product_name:'cloth',
+                    product_price:4000 
+                },
+            ]
+        },
+        {
+            date_of_purchase:'24/06/2022',
+            item_purchased:[
+                {
+                    product_name:'skirt',
+                    product_price:1200
+                } ,
+            ]
+        }
+    ]
+},
+{
+    name:'sradha',
+    email:'sradha@gmail.com',
+    phone:2323726326,
+    no_of_times_shopped:2,
+    purchase_history: [
+        {
+            date_of_purchase:'06/07/2022',
+            item_purchased:[
+                {
+                    product_name:'redmi',
+                    product_price:62000
+                } ,
+                {
+                    product_name:'cloth',
+                    product_price:4000 
+                },
+            ]
+        },
+        {
+            date_of_purchase:'28/06/2022',
+            item_purchased:[
+                {
+                    product_name:'pants',
+                    product_price:1200
+                } ,
+            ]
+        }
+    ]
+},
+{
+    name:'kajol',
+    email:'kajoldash@gmail.com',
+    phone:3232878789,
+    no_of_times_shopped:5,
+    purchase_history: [
+        {
+            date_of_purchase:'11/07/2022',
+            item_purchased:[
+                {
+                    product_name:'htc',
+                    product_price:20000
+                } ,
+                {
+                    product_name:'cloth',
+                    product_price:4000 
+                },
+            ]
+        },
+        {
+            date_of_purchase:'26/06/2022',
+            item_purchased:[
+                {
+                    product_name:'sanitizer',
+                    product_price:100
+                } ,
+            ]
+        },
+        {
+            date_of_purchase:'25/06/2022',
+            item_purchased:[
+                {
+                    product_name:'pants',
+                    product_price:1200
+                } ,
+            ]
+        },{
+            date_of_purchase:'27/06/2022',
+            item_purchased:[
+                {
+                    product_name:'Tshirt',
+                    product_price:1200
+                } ,
+            ]
+        },
+        {
+            date_of_purchase:'29/06/2022',
+            item_purchased:[
+                {
+                    product_name:'charger',
+                    product_price:1000
+                } ,
+            ]
+        }
+    ]
+}
+]
+
+console.log("***********CUSTOMER ORDERS ***********");
+for(let i=0;i<customer.length;i++)
+{
+    console.log(customer[i].name);
+    console.log(customer[i].email);
+    console.log(customer[i].no_of_times_shopped);
+    for(let j=0;j<customer[i].purchase_history.length;j++)
+    {
+        console.log(customer[i].purchase_history[j].date_of_purchase);
+        for(let k=0;k<customer[i].purchase_history[j].item_purchased.length;k++)
+        {
+            console.log(customer[i].purchase_history[j].item_purchased[k].product_name);
+            console.log(customer[i].purchase_history[j].item_purchased[k].product_price);
+        }
+    }
+
+}
+console.log("NAMES of the customer who shopped more than 5 times ==")
+for(let i=0;i<customer.length;i++)
+{
+    if(customer[i].no_of_times_shopped>5)
+    {
+        console.log(customer[i].name);
+    }
+}
+
+console.log("customers names and their total bill ");
+for(let i=0;i<customer.length;i++)
+{
+    let sum=0;
+   for(let j=0;j<customer[i].purchase_history.length;j++)
+    {
+        for(let k=0;k<customer[i].purchase_history[j].item_purchased.length;k++)
+        {
+            sum=sum+customer[i].purchase_history[j].item_purchased[k].product_price;
+        }
+        
+    }
+    console.log("NAME="+customer[i].name+"\n"+`Total purchase price=${sum}`);
+}
+</script>
+</html>
