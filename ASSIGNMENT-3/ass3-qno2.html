@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>qno2</title>
+</head>
+<body>
+    
+</body>
+<script>
+    
+
+
+function negativeAvg()
+{
+    var n = Number(prompt("how many elements you want?"))
+    var arr = [];
+    var sum = 0;
+    var avg=0;
+    var num;
+    for(var i=0;i<n;i++){
+    var num=Number(prompt(`Enter ${i} element`));
+    arr.push(num);
+    if(num<0){
+      sum = sum + num;
+      
+      
+      }
+}     
+    avg=sum/n;
+      
+      console.log(arr);
+      console.log(avg);
+      
+}
+
+console.log(negativeAvg());
+</script>
+
+</html>

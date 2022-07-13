@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>qno3</title>
+</head>
+<body>
+    <input type ="number" name="" id="one">
+    <input type="number" name="" id="two">
+    <button onclick="prime()">Click</button>
+<script>
+    function prime(){
+    var a=document.getElementById("one").value;
+    var b=document.getElementById("two").value;
+    var isprime;
+    let sum=0;
+    if(a<2)
+    a=2;
+    for(var i=a;i<=b;i++){
+        isprime=1;
+        for(var j=2;j<=i/2;j++)
+        {
+            if(i%j==0){
+                isprime=0;
+                break;
+            }
+        }
+        if(isprime ==1){
+            sum=sum+i;
+            console.log(i);
+        }
+        
+        console.log(sum);
+    }
+    
+}
+console.log(prime());
+
+</script>
+</body>
+</html>
