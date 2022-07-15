@@ -1,0 +1,22 @@
+[
+    
+    {
+        "product_id":123,
+        "product_name":"emmma jackson",
+        "quantity":2,
+        "price":100
+    },
+    {
+        "product_id":126,
+        "product_name":"tom cruise",
+        "quantity":2,
+        "price":100
+    },
+    {
+        "product_id":127,
+        "product_name":"harry style",
+        "quantity":2,
+        "price":100
+    } 
+]
+
